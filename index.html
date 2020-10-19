@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="left-side">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="right-side">
+      <div class="free-try">
+        <p> Try it free 7 days <span>then $20/mo. thereafter</span> </p>
+      </div>
+      <div class="form-body">
+        <form name="myform" method="" onsubmit="return validateform()">
+          <input type="text" name="first_name" id="first_name" placeholder="First Name"><span id="first"
+            class="msg"></span>
+          <input type="text" name="last_name" id="last_name" placeholder="Last Name"><span id="last" class="msg"></span>
+          <input type="email" name="email_address" id="email_address " placeholder="Email Address"><span id="email"
+            class="msg"></span>
+          <input type="password" name="password" id="password" placeholder="Password" minlength="6"><span id="pass"
+            class="msg"></span>
+          <input type="submit" value="Claim your free trial" id="btn">
+          <p> By clicking the button, you are agreeing to our <span> Terms and Services</span></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Swapnil Bhakare</a>.
+    </p>
+  </footer>
+
+
+  <script src='/main.js'></script>
+</body>
+
+</html>

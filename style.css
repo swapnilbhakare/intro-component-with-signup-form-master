@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* ## Colors
+
+### Primary */
+
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* ### Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /* ### Neutral */
+
+  --DarkBlue: hsl(249, 10%, 26%);
+  --GrayishBlue: hsl(246, 25%, 77%);
+}
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background: url(images/bg-intro-desktop.png), var(--Red);
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left-side {
+  color: #ffffff;
+  flex-basis: 50%;
+  text-align: left;
+}
+h1 {
+  position: relative;
+  width: 450px;
+  left: 30%;
+  font-size: 50px;
+  font-weight: 700;
+}
+.left-side p {
+  position: relative;
+  width: 500px;
+  left: 30%;
+  font-weight: 400;
+}
+.right-side {
+  margin-left: 100px;
+  flex-basis: 50%;
+  color: #ffffff;
+}
+.free-try {
+  position: relative;
+  background-color: var(--Blue);
+  width: 500px;
+
+  padding: 1px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 4px -6px var(--GrayishBlue);
+}
+.free-try > p {
+  text-align: center;
+  font-weight: 500;
+}
+.free-try > p > span {
+  font-size: 14px;
+  color: var(--GrayishBlue);
+}
+.form-body {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  width: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 8px -6px var(--GrayishBlue);
+}
+input {
+  display: block;
+  width: 400px;
+  text-align: left;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 15px 15px;
+  margin: 20px;
+  border: 1px solid;
+}
+#btn {
+  font-weight: 700;
+  background-color: var(--Green);
+  color: #ffffff;
+  width: 430px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 20px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px var(--GrayishBlue);
+}
+.form-body p {
+  color: var(--GrayishBlue);
+  font-weight: 500;
+  font-size: 12px;
+}
+.form-body p span {
+  color: var(--Red);
+}
+.msg {
+  position: relative;
+  color: var(--Red);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10px;
+  font-size: 12px;
+  left: 110px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url(images/bg-intro-mobile.png), var(--Red);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .left-side {
+    color: #ffffff;
+    flex-basis: 50%;
+  }
+  h1 {
+    width: 300px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    left: 10%;
+    margin-top: 50px;
+  }
+  .left-side p {
+    position: relative;
+    width: 300px;
+    left: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .right-side {
+    flex-basis: 50%;
+    color: #ffffff;
+    left: 0;
+  }
+  .free-try {
+    background-color: var(--Blue);
+    width: 300px;
+    left: -60px;
+    padding: 1px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 4px -6px var(--GrayishBlue);
+  }
+  .free-try > p {
+    text-align: center;
+    font-weight: 500;
+  }
+  .free-try > p > span {
+    font-size: 14px;
+    color: var(--GrayishBlue);
+  }
+  .form-body {
+    position: relative;
+    padding: 20px;
+    left: -60px;
+
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 8px -6px var(--GrayishBlue);
+    margin-bottom: 150px;
+  }
+  input {
+    display: block;
+    width: 250px;
+    text-align: left;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin: 20px 10px;
+    border: 1px solid;
+  }
+  #btn {
+    font-weight: 700;
+    background-color: var(--Green);
+    color: #ffffff;
+    width: 280px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 20px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px var(--GrayishBlue);
+  }
+  .form-body p {
+    color: var(--GrayishBlue);
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .form-body p span {
+    color: var(--Red);
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
